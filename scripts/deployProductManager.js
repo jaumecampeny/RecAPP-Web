@@ -1,5 +1,8 @@
-// This is a script for deploying your contracts. You can adapt it to deploy
-// yours, or create new ones.
+/**
+ * @title deployProductManager
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice deployProductManager is a script that enables the deployment of ProductManager smart contract.
+ */
 
 const path = require("path");
 
