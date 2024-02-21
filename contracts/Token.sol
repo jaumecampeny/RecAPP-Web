@@ -75,4 +75,7 @@ contract Token {
     function balanceOf(address account) external view returns (uint256) {
         return balances[account];
     }
+
+    receive() external payable {}
+    fallback() external payable {}
 }
