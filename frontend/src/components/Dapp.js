@@ -87,7 +87,7 @@ export class Dapp extends React.Component {
           );
         }
 
-        // If the token data or the user's balance hasn't loaded yet, we show
+        // If the token data hasn't loaded yet, we show
         // a loading component.
         if (!this.state.selectedAddress) {
             return <Loading />;
