@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+/**
+ * @title BurnProduct
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice BurnProduct is the interface which describes the view for burning products and the communications with Dapp.
+ */
 
 export function BurnProduct({burnProduct}){
 
@@ -38,5 +42,4 @@ export function BurnProduct({burnProduct}){
             </form>
         </div>
     )
-
 }

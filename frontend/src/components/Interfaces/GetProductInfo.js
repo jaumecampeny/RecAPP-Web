@@ -1,3 +1,9 @@
+/**
+ * @title GetProductInfo
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice GetProductInfo is the interface which describes the view for gathering production information and the communications with Dapp.
+ */
+
 import React, { useState } from "react";
 
 export function GetProductInfo({getProductInfo}){

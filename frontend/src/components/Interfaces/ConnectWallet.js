@@ -1,3 +1,9 @@
+/**
+ * @title ConnectWallet
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice ConnectWallet is the interface which describes the view for user wallet connection and the communications with Dapp.
+ */
+
 import React from "react";
 
 import { NetworkErrorMessage } from "./NetworkErrorMessage";

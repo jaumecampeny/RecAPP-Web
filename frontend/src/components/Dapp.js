@@ -1,3 +1,9 @@
+/**
+ * @title Dapp
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice Dapp is the major component which ensures the management of the frontend logistics in addition to the render of the multiple interfaces
+ */
+
 import React from "react";
 
 // We'll use ethers to interact with the Ethereum network and our contract

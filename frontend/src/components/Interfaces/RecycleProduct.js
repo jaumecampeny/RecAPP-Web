@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+/**
+ * @title RecycleProduct
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice RecycleProduct is the interface which describes the view for recycling products and the communications with Dapp.
+ */
 
 export function RecycleProduct({recycleProduct}){
 

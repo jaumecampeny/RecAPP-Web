@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+/**
+ * @title TransferProducts
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice TransferProducts is the interface which describes the view for transfering products and the communications with Dapp.
+ */
 
 export function TransferProducts({transferProducts}){
     //State for the storage of return message.

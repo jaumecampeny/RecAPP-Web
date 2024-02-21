@@ -1,3 +1,9 @@
+/**
+ * @title ProduceProduct
+ * @author Jaume Campeny <jaume@campeny.net>
+ * @notice ProduceProduct is the interface which describes the view for producing products and the communications with Dapp.
+ */
+
 import React, { useState } from "react";
 
 export function ProduceProduct({produceProduct}){
