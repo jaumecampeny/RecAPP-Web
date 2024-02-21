@@ -192,6 +192,7 @@ contract ProductManager {
     function burn(address productAddr) public {
         Product product = products[productAddr];
         require(msg.sender == product.getOwner(),"Only the owner of a token can burn it.");
+        require(product.getState() == State.usable,"Only usable products can be burnt");
         delete products[productAddr];
     }
 
@@ -202,6 +203,7 @@ contract ProductManager {
     function recycleBurn(address productAddr) public {
         Product product = products[productAddr];
         require(msg.sender == product.getOwner(),"Only the owner of a token can change its state");
+        require(product.getState() == State.usable,"Only usable products can be prepared for recycle");
         product.changeState(State.pendingRecycle);
     }
 
@@ -212,6 +214,7 @@ contract ProductManager {
     function recycleProduce(address productAddr) public {
         Product product = products[productAddr];
         require(msg.sender == product.getOwner(),"Only the owner of a token can change its state");
+        require(product.getState() == State.pendingRecycle,"Only products prepared can be recycled");
         product.changeState(State.usable);
         product.incrementRecycledTimes();
     }
